@@ -1,6 +1,5 @@
 //Triangular Metrics
 import * as facemesh from "@tensorflow-models/facemesh"
-import * as handpose from "@tensorflow-models/handpose";
 export const TRIANGULATION: number[] = [
     127,
     34,
