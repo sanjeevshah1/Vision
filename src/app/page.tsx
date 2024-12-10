@@ -87,7 +87,12 @@ export default function Home() {
       console.log(hand);
 
       const ctx = canvasRef.current.getContext("2d");
-      ctx && drawHand(hand, ctx);
+      if (ctx) {
+        drawHand(hand, ctx);
+      }else{
+        console.log("ctx is null");
+      }
+      
     }
   };
 
